@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellio Picard — Développeur Web | Recherche de Stage</title>
+    <meta
+      name="description"
+      content="Portfolio d'Ellio Picard, étudiant Développeur Web chez Educatel. Compétences en frontend (Angular) et en cours d'apprentissage de l'écosystème backend (PHP, MySQL, APIs, sécurité). Recherche de stage (4 semaines min.)."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- En-tête / Navigation -->
+    <header id="header">
+      <nav class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Retour en haut">
+          <img src="./assets/images/photo_ellio.jpg" alt="Ellio Picard" />
+          <span class="logo-text">Ellio<span class="dot">.</span></span>
+        </a>
+
+        <!-- Bouton Burger Mobile -->
+        <button class="burger-menu" id="burger-btn" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="#about" class="nav-link"><span class="number">01. </span>About</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"><span class="number">02. </span>Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link"><span class="number">03. </span>Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link"><span class="number">04. </span>Contact</a>
+          </li>
+          <li class="nav-btn-item">
+            <a href="./assets/cv_ellio_picard.pdf" target="_blank" class="nav-cta-btn" title="Ouvrir le CV PDF">
+              <i class="fa-solid fa-file-arrow-down"></i> Mon CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sidebar Réseaux Sociaux (Gauche) -->
+    <aside class="social-sidebar" aria-label="Réseaux sociaux">
+      <a
+        href="https://www.linkedin.com/in/ellio-picard-0019a3263"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a
+        href="https://github.com/Elliodev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href="https://x.com/elliodev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="X (Twitter)"
+      >
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="./assets/cv_ellio_picard.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="CV PDF"
+        title="Télécharger mon CV"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+      </a>
+    </aside>
+
+    <!-- Sidebar Email (Droite) -->
+    <aside class="email-sidebar" aria-label="Contact direct">
+      <a href="mailto:ellio.picard@free.fr" class="email-link">ellio.picard@free.fr</a>
+    </aside>
+
+    <main>
+      <!-- Section 00 : Hero -->
+      <section id="hero">
+        <div class="hero-container">
+          <div class="left reveal">
+            <div class="badge-stage">
+              <span class="status-dot"></span>
+              <span>Recherche de stage (4 semaines min.)</span>
+            </div>
+            <h1 class="hero-title">Ellio Picard.</h1>
+            <h2 class="hero-subtitle">Développeur Web.</h2>
+            <p class="hero-description">
+              Étudiant chez <strong>Educatel</strong> (Titre Professionnel Développeur Web & Web Mobile).
+              Fort d'une première pratique solide du frontend avec <strong>Angular</strong>, j'approfondis activement l'écosystème <strong>backend</strong> (PHP, MySQL, APIs, architecture serveur, sécurité) et je recherche un stage pour continuer d'apprendre sur le terrain.
+            </p>
+            <div class="hero-actions">
+              <a href="./assets/cv_ellio_picard.pdf" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-regular fa-paper-plane"></i> Me contacter
+              </a>
+            </div>
+          </div>
+          <div class="right reveal">
+            <div class="photo-wrapper">
+              <div class="photo-frame"></div>
+              <img src="./assets/images/photo_ellio.jpg" alt="Photo de profil d'Ellio Picard" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 01 : About -->
+      <section id="about" class="section-container reveal">
+        <div class="section-header">
+          <h2><span class="number">01.</span> À propos</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actuellement en formation chez <strong>Educatel</strong> (promotion 2024 - 2027), je prépare le <strong>Titre Professionnel Développeur Web et Web Mobile</strong> (Bac+2 / Niveau 5).
+            </p>
+            <p>
+              Après avoir validé la création d'interfaces dynamiques côté <strong>frontend</strong> (<strong>Angular</strong>, <strong>TypeScript</strong>, <strong>HTML/CSS</strong>), je suis actuellement en plein apprentissage de la partie <strong>backend</strong> : conception et gestion de bases de données (<strong>MySQL</strong>, SQL relationnel & NoSQL), programmation côté serveur en <strong>PHP</strong> (POO, MVC, APIs REST), sécurité des données et des échanges, ainsi que les autres piliers au programme (<strong>Symfony</strong>, <strong>Node.js</strong>, <strong>Docker</strong>).
+            </p>
+            <p>
+              J'ai pleinement conscience de la richesse de cet écosystème et de tout ce qu'il me reste à apprendre et approfondir au fil de mes projets.
+            </p>
+
+            <div class="about-stage-goal">
+              🎯 <strong>Objectif :</strong> Un <strong>stage conventionné de 4 semaines minimum</strong> pour continuer à progresser au contact de développeurs expérimentés, consolider mes compétences backend et apporter ma motivation sur des projets réels.
+            </div>
+          </div>
+
+          <div class="about-stats-card">
+            <div class="stat-box">
+              <span class="stat-badge">Formation</span>
+              <span class="stat-number">Educatel</span>
+              <span class="stat-label">Titre Pro Développeur Web (Bac+2)</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-badge">En cours</span>
+              <span class="stat-number">Backend</span>
+              <span class="stat-label">PHP, MySQL & écosystème web</span>
+            </div>
+            <div class="stat-box highlight-box">
+              <span class="stat-badge alert">Stage</span>
+              <span class="stat-number">4 sem. min.</span>
+              <span class="stat-label">Convention fournie par Educatel</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 02 : Skills -->
+      <section id="skills" class="section-container reveal">
+        <div class="section-header">
+          <h2><span class="number">02.</span> Compétences</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-essential-grid">
+          <div class="skill-item">
+            <i class="fa-brands fa-angular"></i>
+            <span>Angular</span>
+            <small class="skill-level">Frontend</small>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-php"></i>
+            <span>PHP</span>
+            <small class="skill-level learning">En apprentissage</small>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript / TS</span>
+            <small class="skill-level">Frontend</small>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-database"></i>
+            <span>MySQL</span>
+            <small class="skill-level learning">En apprentissage</small>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML / CSS</span>
+            <small class="skill-level">Frontend</small>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git & GitHub</span>
+            <small class="skill-level">Outils</small>
+          </div>
+        </div>
+
+        <!-- Note ouverte sur le reste du programme de formation -->
+        <div class="skills-curriculum-note">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>
+            Également au programme de ma formation : <strong>architecture web & APIs</strong>, <strong>sécurité des données</strong>, <strong>Symfony</strong>, <strong>Node.js</strong>, <strong>NoSQL</strong> et <strong>Docker</strong>.
+          </span>
+        </div>
+      </section>
+
+      <!-- Section 03 : Projects (Uniquement Mon Kanban) -->
+      <section id="projects" class="section-container reveal">
+        <div class="section-header">
+          <h2><span class="number">03.</span> Projet</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="single-project-wrapper">
+          <article class="project-card-featured">
+            <div class="project-meta-top">
+              <span class="featured-badge">
+                <i class="fa-solid fa-circle-check"></i> En ligne
+              </span>
+              <span class="project-type-tag">Application Web</span>
+            </div>
+
+            <div class="project-grid-layout">
+              <div class="project-details">
+                <h3 class="project-title-large">
+                  <a href="https://elliodevv-kanban.alwaysdata.net" target="_blank" rel="noopener noreferrer">
+                    Mon Kanban
+                  </a>
+                </h3>
+
+                <p class="project-intro-text">
+                  Application de gestion de tâches développée de bout en bout : frontend réactif avec Angular 22, API REST en PHP 8 et base relationnelle MySQL normalisée.
+                </p>
+
+                <div class="project-feature-list">
+                  <div class="feat-item">
+                    <i class="fa-solid fa-check feat-icon"></i>
+                    <span>Drag & Drop de cartes et colonnes (Angular CDK).</span>
+                  </div>
+                  <div class="feat-item">
+                    <i class="fa-solid fa-check feat-icon"></i>
+                    <span>Édition inline instantanée avec raccourcis clavier.</span>
+                  </div>
+                  <div class="feat-item">
+                    <i class="fa-solid fa-check feat-icon"></i>
+                    <span>Authentification et sessions côté serveur (PHP 8 / PDO).</span>
+                  </div>
+                  <div class="feat-item">
+                    <i class="fa-solid fa-check feat-icon"></i>
+                    <span>Base MySQL relationnelle avec suppression en cascade.</span>
+                  </div>
+                </div>
+
+                <div class="project-tags-container">
+                  <span class="tech-pill">Angular 22</span>
+                  <span class="tech-pill">PHP 8 REST</span>
+                  <span class="tech-pill">MySQL</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">Alwaysdata</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://elliodevv-kanban.alwaysdata.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Démo en direct
+                  </a>
+                  <a
+                    href="https://github.com/Elliodev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                  >
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+
+              <!-- Mockup Visuel Interactif CSS -->
+              <div class="project-visual-preview">
+                <div class="kanban-window">
+                  <div class="window-bar">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <div class="window-address">elliodevv-kanban.alwaysdata.net</div>
+                  </div>
+                  <div class="kanban-board-preview">
+                    <div class="kb-col">
+                      <div class="kb-col-header">
+                        <span>À FAIRE</span>
+                        <span class="kb-badge">2</span>
+                      </div>
+                      <div class="kb-task-card">
+                        <span class="kb-tag tech">Backend</span>
+                        <p>Architecture API REST</p>
+                      </div>
+                      <div class="kb-task-card">
+                        <span class="kb-tag security">Sécurité</span>
+                        <p>Requêtes préparées PDO</p>
+                      </div>
+                    </div>
+
+                    <div class="kb-col">
+                      <div class="kb-col-header">
+                        <span>EN COURS</span>
+                        <span class="kb-badge active">1</span>
+                      </div>
+                      <div class="kb-task-card active-card">
+                        <span class="kb-tag front">Angular</span>
+                        <p>Drag & Drop CDK</p>
+                      </div>
+                    </div>
+
+                    <div class="kb-col">
+                      <div class="kb-col-header">
+                        <span>TERMINÉ</span>
+                        <span class="kb-badge done">2</span>
+                      </div>
+                      <div class="kb-task-card done-card">
+                        <span class="kb-tag db">MySQL</span>
+                        <p>Contraintes relationnelles</p>
+                      </div>
+                      <div class="kb-task-card done-card">
+                        <span class="kb-tag deploy">Prod</span>
+                        <p>Déploiement Alwaysdata</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 04 : Contact -->
+      <section id="contact" class="section-container contact-section reveal">
+        <div class="section-header center-header">
+          <h2><span class="number">04.</span> Contact</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-intro">
+            <h3 class="contact-headline">Discutons d'un stage.</h3>
+            <p>
+              Je recherche un <strong>stage de 4 semaines minimum</strong> pour continuer ma montée en compétences sur le <strong>backend et l'écosystème web</strong>, et apporter ma motivation à votre équipe.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="info-title">Email</span>
+                  <a href="mailto:ellio.picard@free.fr" class="info-link">ellio.picard@free.fr</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="info-title">Téléphone</span>
+                  <a href="tel:+33778440895" class="info-link">07 78 44 08 95</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <div>
+                  <span class="info-title">Curriculum Vitae</span>
+                  <a href="./assets/cv_ellio_picard.pdf" target="_blank" class="info-link">
+                    Télécharger mon CV (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="info-social-links">
+                <a
+                  href="https://www.linkedin.com/in/ellio-picard-0019a3263"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a
+                  href="https://github.com/Elliodev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://x.com/elliodev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="Twitter"
+                >
+                  <i class="fa-brands fa-x-twitter"></i> Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact (Connecte pour envoi reel) -->
+          <div class="contact-form-card">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formsubmit.co/ellio.picard@free.fr"
+              method="POST"
+            >
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="[Portfolio] Nouvelle proposition de stage !">
+
+              <div class="form-group">
+                <label for="name">Nom / Entreprise</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Votre nom ou société"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Proposition de stage"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Votre message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span><i class="fa-solid fa-paper-plane"></i> Envoyer</span>
+              </button>
+
+              <div class="form-feedback" id="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Script JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
