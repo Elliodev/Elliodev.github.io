@@ -5,16 +5,17 @@
    ========================================================================== */
 
 :root {
-  /* Palette de couleurs */
-  --color-fond: #0f172a;           /* Arriere-plan principal (Slate-900) */
-  --color-surface: #1e293b;        /* Surface des cartes (Slate-800) */
-  --color-surface-hover: #273549;  /* Surface au survol */
-  --color-texte: #e2e8f0;          /* Texte principal (Slate-200) */
-  --color-texte-muted: #94a3b8;    /* Texte attenue (Slate-400) */
-  --color-accent: #38bdf8;         /* Couleur d'accent (Sky-400 cyan) */
-  --color-accent-glow: rgba(56, 189, 248, 0.15);
-  --color-border: rgba(148, 163, 184, 0.14);
-  --color-border-accent: rgba(56, 189, 248, 0.35);
+  /* Palette de couleurs : Ambre Chaleureux / Sunset Noir */
+  --color-fond: #0c0c0e;           /* Arriere-plan principal (Noir graphite chaud) */
+  --color-surface: #18181d;        /* Surface des cartes (Anthracite chaud) */
+  --color-surface-hover: #22222a;  /* Surface au survol */
+  --color-texte: #f4f4f5;          /* Texte principal (Blanc chaud) */
+  --color-texte-muted: #a1a1aa;    /* Texte attenue (Zinc-400) */
+  --color-accent: #f97316;         /* Couleur d'accent (Orange ambre sunset) */
+  --color-accent-hover: #fb923c;   /* Accent au survol (Orange-400) */
+  --color-accent-glow: rgba(249, 115, 22, 0.18);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-accent: rgba(249, 115, 22, 0.35);
 
   /* Typographie */
   --font-heading: 'Syne', sans-serif;
@@ -433,15 +434,15 @@ main {
 
 .btn-primary {
   background-color: var(--color-accent);
-  color: #0f172a;
+  color: #0c0c0e;
   border: 1px solid var(--color-accent);
   font-weight: 700;
 }
 
 .btn-primary:hover {
-  background-color: #7dd3fc;
-  border-color: #7dd3fc;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
   transform: translateY(-2px);
 }
 
@@ -487,8 +488,8 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  background-color: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.3);
   padding: 5px 14px;
   border-radius: var(--radius-full);
   font-size: 0.82rem;
@@ -597,7 +598,7 @@ main {
 }
 
 .about-stage-goal {
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(249, 115, 22, 0.08);
   border-left: 3px solid var(--color-accent);
   padding: 14px 18px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
@@ -682,7 +683,7 @@ main {
 .skill-item:hover {
   border-color: var(--color-accent);
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px -10px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 10px 25px -10px rgba(249, 115, 22, 0.25);
 }
 
 .skill-item i {
@@ -710,8 +711,8 @@ main {
 
 .skill-level.learning {
   color: var(--color-accent);
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.25);
   padding: 2px 8px;
   border-radius: var(--radius-full);
   font-weight: 600;
@@ -751,7 +752,7 @@ main {
 
 .project-card-featured {
   background-color: var(--color-surface);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-lg);
   padding: 40px;
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
@@ -761,7 +762,7 @@ main {
 .project-card-featured:hover {
   border-color: var(--color-accent);
   transform: translateY(-2px);
-  box-shadow: 0 25px 45px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(56, 189, 248, 0.1);
+  box-shadow: 0 25px 45px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(249, 115, 22, 0.1);
 }
 
 .project-meta-top {
@@ -821,15 +822,15 @@ main {
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--color-accent);
-  background-color: rgba(56, 189, 248, 0.08);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  background-color: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   padding: 5px 12px;
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
 }
 
 .tech-pill:hover {
-  background-color: rgba(56, 189, 248, 0.16);
+  background-color: rgba(249, 115, 22, 0.16);
   border-color: var(--color-accent);
 }
 
@@ -880,7 +881,7 @@ main {
 .info-icon {
   width: 40px;
   height: 40px;
-  background-color: rgba(56, 189, 248, 0.1);
+  background-color: rgba(249, 115, 22, 0.1);
   border: 1px solid var(--color-border-accent);
   border-radius: var(--radius-md);
   display: flex;
