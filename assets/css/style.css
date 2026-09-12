@@ -646,9 +646,8 @@ main {
 
 .stat-number {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  line-height: 1.25;
   color: #ffffff;
 }
 
